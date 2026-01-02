@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="Imagens/machado.svg"
+      alt="icone de machado"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Tiago Machado</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="Imagens/fotoperfil.jpg" alt="foto de perfil" class="round" />
+      <h1>Tiago Machado</h1>
+      <p>Futuro Web Developer</p>
+    </header>
+
+    <nav class="navbar">
+      <button class="menu-toggle" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars">☰</i>
+      </button>
+      <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contactos">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Hobbies: Desporto, Tecnologia, Café, Viagens</p>
+      </section>
+
+      <section>
+        <h2>Formação</h2>
+        <ol>
+          <li>Licenciatura em Antropologia (ISCTE-IUL)</li>
+          <li>
+            Pós-Graduação em Ciências Policiais e Segurança Interna, na
+            especialização de Criminologia e Investigação Criminal (ISCPSI)
+          </li>
+          <li>Programa UpSkill: Frontend JavaScript</li>
+        </ol>
+      </section>
+
+      <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+          <figure class="projeto-card">
+            <img src="https://placehold.co/400x300" alt="" />
+            <figcaption>Projeto 1</figcaption>
+          </figure>
+          <figure class="projeto-card">
+            <img src="https://placehold.co/400x300" alt="" />
+            <figcaption>Projeto 2</figcaption>
+          </figure>
+          <figure class="projeto-card">
+            <img src="https://placehold.co/400x300" alt="" />
+            <figcaption>Projeto 3</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="contactos">
+        <h2>Contactos</h2>
+        <ul>
+          <li>
+            <a href="mailto:timac1997@gmail.com"
+              ><img
+                src="Imagens/email-svgrepo-com.svg"
+                alt="icone email"
+                id="email"
+              />timac1997@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+351925516462"
+              ><img
+                src="Imagens/phone.svg"
+                alt="icone telefone"
+                id="telefone"
+              />+351 925 516 462</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/timac1997-arch" target="_blank"
+              ><img
+                src="Imagens/github.svg"
+                alt="icone github"
+                id="github"
+              />GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <form action="#" method="get" onsubmit="enviarForm(event)">
+          <label for="nome">Nome</label><br />
+          <input id="nome" type="text" required /><br />
+
+          <label for="mail">E-mail</label><br />
+          <input id="mail" type="email" required /><br />
+
+          <label for="assunto">Assunto</label><br />
+          <select name="assunto" id="assunto">
+            <option value="">Recrutamento</option>
+            <option value="">Freelance</option>
+            <option value="">Outro</option></select
+          ><br />
+
+          <label for="mensagem">Mensagem</label><br />
+          <textarea
+            name="caixa mensagem"
+            id="mensagem"
+            rows="5"
+            minlength="10"
+            placeholder="Deixa aqui uma mensagem 😉"
+            required
+          ></textarea
+          ><br />
+
+          <button type="submit">Enviar Mensagem 🚀</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3 id="based">Based in:</h3>
+      <iframe
+        id="mapa"
+        title="mapa de localização"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255437.60377585478!2d-9.601791469594723!3d39.38444984172151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1f45c49805a145%3A0x26caf596a0956bf3!2sPeniche!5e1!3m2!1spt-PT!2spt!4v1767267966019!5m2!1spt-PT!2spt"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      &copy; 2025 Desenvolvido por Tiago Machado
+    </footer>
+
+    <script>
+      function enviarForm(event) {
+        event.preventDefault();
+        alert("Obrigado pelo contacto! Responderei em breve.");
+      }
+    </script>
+
+    <script>
+      const btn = document.querySelector(".menu-toggle");
+      const menu = document.querySelector("nav ul");
+
+      // Ao clicar no botão, liga/desliga a classe 'aberto'
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("aberto");
+      });
+    </script>
+  </body>
+</html>
