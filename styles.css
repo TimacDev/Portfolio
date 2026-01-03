@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  line-height: 1.5em;
+  font-family: "Roboto", sans-serif; /* font da google até à linha 8 */
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -98,7 +99,7 @@ figure {
 
 main {
   flex-grow: 1;
-  padding: 15px;
+  padding: 25px;
 }
 
 .projeto-card {
@@ -185,4 +186,15 @@ nav ul.aberto {
 
 #mapa {
   height: 85vh;
+}
+
+#contactos img {
+  margin-right: 0.5em;
+}
+
+@media (max-width: 768px) {
+  #contactos ul {
+    flex-direction: column;
+    gap: 1em;
+  }
 }
