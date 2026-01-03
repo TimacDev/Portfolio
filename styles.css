@@ -59,6 +59,11 @@ h3 {
   color: #a0522d;
 }
 
+html {
+  scroll-behavior: smooth; /* scroll suave */
+  scroll-padding-top: 100px; /* previne que a navbar dê scroll para cima dos elementos âncora */
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -69,6 +74,7 @@ h3 {
 }
 
 .navbar a {
+  /* botão puramente estético */
   display: inline-block;
   padding: 10px 20px;
   color: #ffebcd;
@@ -113,46 +119,6 @@ figcaption {
   flex-grow: 1;
 }
 
-.menu-toggle {
-  display: block; /* Botão visível */
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: inherit; /* Herda a cor do header */
-}
-
-nav ul {
-  display: none; /* Menu escondido por defeito */
-  flex-direction: column;
-  width: 100%;
-  background-color: transparent; /* Ajusta à tua cor */
-  top: 60px; /* Ajusta conforme altura do teu header */
-  left: 0;
-  padding: 20px;
-  z-index: 100;
-}
-
-/* Esta classe será adicionada pelo JS para mostrar o menu */
-nav ul.aberto {
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none; /* Esconde o botão */
-  }
-
-  nav ul {
-    display: flex; /* Mostra sempre o menu */
-    flex-direction: row; /* Em linha */
-    background-color: transparent;
-    position: static; /* Volta ao fluxo normal */
-    width: auto;
-    padding: 0;
-  }
-}
-
 .round {
   /* class criada para arredondar a foto de perfil */
   width: clamp(150px, 20vw, 200px);
@@ -186,6 +152,46 @@ nav ul.aberto {
 
 #contactos img {
   margin-right: 0.5em;
+}
+
+.menu-toggle {
+  display: block; /* Botão visível */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: inherit; /* Herda a cor do header */
+}
+
+nav ul {
+  display: none; /* Menu escondido por defeito */
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent; /* Ajusta à tua cor */
+  top: 60px; /* Ajusta conforme altura do teu header */
+  left: 0;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+/* Esta classe será adicionada pelo JS para mostrar o menu */
+nav ul.aberto {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Esconde o botão */
+  }
+
+  nav ul {
+    display: flex; /* Mostra sempre o menu */
+    flex-direction: row; /* Em linha */
+    background-color: transparent;
+    position: static; /* Volta ao fluxo normal */
+    width: auto;
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
