@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  line-height: 1.5em;
+  line-height: 1.5em; /* espaçamento de linhas para melhor leitura*/
   font-family: "Roboto", sans-serif; /* font da google até à linha 8 */
   font-optical-sizing: auto;
   font-weight: 400;
@@ -73,8 +73,7 @@ html {
   z-index: 100;
 }
 
-.navbar a {
-  /* botão puramente estético */
+.navbar a { /* botão puramente estético */  
   display: inline-block;
   padding: 10px 20px;
   color: #ffebcd;
