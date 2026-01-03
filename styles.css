@@ -43,7 +43,7 @@ header h1 {
 header p {
   grid-area: p;
   margin: 0;
-  margin-left: 30px;
+  margin-left: 50px;
   padding: 15px;
   font-weight: bold;
   align-self: flex-start;
@@ -99,7 +99,7 @@ figure {
 
 main {
   flex-grow: 1;
-  padding: 25px;
+  padding: 5vw;
 }
 
 .projeto-card {
@@ -162,18 +162,8 @@ nav ul.aberto {
   object-position: center;
 }
 
-#github {
-  height: 1.5em;
-  width: auto;
-  vertical-align: middle;
-}
-
-#email {
-  height: 1.5em;
-  width: auto;
-  vertical-align: middle;
-}
-
+#github,
+#email,
 #telefone {
   height: 1.5em;
   width: auto;
@@ -181,7 +171,7 @@ nav ul.aberto {
 }
 
 #based {
-  padding: 15px;
+  padding-left: 5vw;
 }
 
 #mapa {
