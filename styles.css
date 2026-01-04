@@ -144,6 +144,14 @@ section {
   text-align: center;
 }
 
+.imagem-encolher {
+  transition: transform 0.3s ease;
+}
+
+.img-encolher:hover {
+    transform: scale(0.9);  /* Encolhe para 90% do tamanho */
+}
+
 .round {
   /* class criada para arredondar a foto de perfil */
   width: clamp(
