@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  /* reset simples com adição de limpeza de pseudo elementos (não é o caso mas deixo por boas práticas */
+  /* reset simples com adição de limpeza de pseudo elementos (não é o caso mas deixo por boas práticas) */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
