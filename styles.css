@@ -7,9 +7,7 @@
 } 
 
 body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.5em; /* espaçamento de linhas para melhor leitura*/
+  line-height: 1.5; /* espaçamento de linhas para melhor leitura*/
   font-family: "Roboto", sans-serif; /* font da google até à linha 9 */
   font-optical-sizing: auto;
   font-weight: 400;
