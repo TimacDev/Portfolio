@@ -91,6 +91,11 @@ ul {
   list-style: none;
 }
 
+main {
+  flex-grow: 1;
+  padding: 5vw;
+}
+
 .projetos-grid {
   display: flex;
   flex-wrap: wrap;
@@ -98,30 +103,31 @@ ul {
   justify-content: center;
 }
 
-figure {
-  width: 300px;
-  padding: 25px;
-}
-
-main {
-  flex-grow: 1;
-  padding: 5vw;
-}
-
 .projeto-card {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 1 280px;
   min-width: 250px;
+  max-width: 400px;
+  padding: 25px;
 }
 
-figcaption {
-  flex-grow: 1;
+.projeto-card img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 4px;
+}
+
+.projeto-card figcaption {
+  flex-grow: 1; 
+  padding-top: 10px;
+  text-align: center;
 }
 
 .round {
   /* class criada para arredondar a foto de perfil */
-  width: clamp(150px, 20vw, 200px);
+  width: clamp(150px, 20vw, 200px); /* encontrei este comando moderno que funciona basicamente como min-max, mas aplica por defeito o tamnho do meio */
   height: clamp(150px, 20vw, 200px);
   border-radius: 50%;
   object-fit: cover;
