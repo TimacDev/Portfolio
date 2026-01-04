@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after { /* reset simples com adição de limpeza de pseudo elementos (não é o caso mas deixo por boas práticas */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
 body {
   margin: 0;
   padding: 0;
@@ -73,8 +81,7 @@ html {
   z-index: 100;
 }
 
-.navbar a {
-  /* botão puramente estético */
+.navbar a { /* botão puramento estético */
   display: inline-block;
   padding: 10px 20px;
   color: #ffebcd;
@@ -153,13 +160,14 @@ section {
   vertical-align: middle;
 }
 
-#based {
+footer {
   padding-left: 5vw;
   padding-right: 5vw;
 }
 
 #mapa {
   height: 80vh;
+  border-radius: 15px;
 }
 
 #contactos img {
