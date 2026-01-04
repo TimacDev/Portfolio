@@ -92,6 +92,10 @@ html {
   transition: all 0.2s;
 }
 
+.navbar a:hover {
+  transform: scale(0.90);
+}
+
 ul {
   display: flex;
   gap: 20px;
