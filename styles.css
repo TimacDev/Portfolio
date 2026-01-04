@@ -158,7 +158,10 @@ section {
 }
 
 #sobre {
-  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 5vh;
 }
 
 #github,
