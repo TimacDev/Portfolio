@@ -37,6 +37,7 @@ header {
 
 header .round {
   grid-area: img;
+  margin-left: 5vw;
 }
 
 header h1 {
@@ -51,7 +52,7 @@ header h1 {
 header p {
   grid-area: p;
   margin: 0;
-  margin-left: 50px;
+  margin-left: 50px; /* descentra o texto de propósito */
   padding: 15px;
   font-weight: bold;
   align-self: flex-start;
@@ -75,7 +76,7 @@ html {
 .navbar {
   position: sticky;
   top: 0;
-  padding: 5px;
+  padding: 10px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* compatibilidade Safari */
   z-index: 100;
