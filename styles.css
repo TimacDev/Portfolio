@@ -74,7 +74,7 @@ html {
 .navbar {
   position: sticky;
   top: 0;
-  padding: 10px;
+  padding: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* compatibilidade Safari */
   z-index: 100;
@@ -143,6 +143,10 @@ section {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+}
+
+#sobre {
+  margin-top: 5rem;
 }
 
 #github,
