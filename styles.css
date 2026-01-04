@@ -1,10 +1,11 @@
 *,
 *::before,
-*::after { /* reset simples com adição de limpeza de pseudo elementos (não é o caso mas deixo por boas práticas */
+*::after {
+  /* reset simples com adição de limpeza de pseudo elementos (não é o caso mas deixo por boas práticas */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 body {
   line-height: 1.5; /* espaçamento de linhas para melhor leitura*/
@@ -80,7 +81,8 @@ html {
   z-index: 100;
 }
 
-.navbar a { /* botão puramento estético */
+.navbar a {
+  /* botão puramento estético */
   display: inline-block;
   padding: 10px 20px;
   color: #ffebcd;
@@ -97,10 +99,16 @@ ul {
   list-style: none;
 }
 
-main {
+main,
+footer {
   flex-grow: 1;
   padding-left: 5vw;
   padding-right: 5vw;
+}
+
+footer section {
+  /* overide em margens anteriores muito grandes */
+  margin-bottom: 2vh;
 }
 
 section {
@@ -124,21 +132,25 @@ section {
 }
 
 .projeto-card img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 4px;
 }
 
 .projeto-card figcaption {
-  flex-grow: 1; 
+  flex-grow: 1;
   padding-top: 10px;
   text-align: center;
 }
 
 .round {
   /* class criada para arredondar a foto de perfil */
-  width: clamp(150px, 20vw, 200px); /* encontrei este comando moderno que funciona basicamente como min-max, mas aplica por defeito o tamnho do meio */
+  width: clamp(
+    150px,
+    20vw,
+    200px
+  ); /* encontrei este comando moderno que funciona basicamente como min-max, mas aplica por defeito o tamnho do meio */
   height: clamp(150px, 20vw, 200px);
   border-radius: 50%;
   object-fit: cover;
@@ -163,14 +175,10 @@ section {
   vertical-align: middle;
 }
 
-footer {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
 #mapa {
   height: 80vh;
   border-radius: 15px;
+  margin-top: 5vh;
 }
 
 #contactos img {
