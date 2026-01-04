@@ -184,6 +184,11 @@ section {
   margin-top: 5vh;
 }
 
+#contactos ul {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 #contactos img {
   margin-right: 0.5em;
 }
